@@ -188,116 +188,49 @@
                     Oui (précisez type de contact, famille, travail, en milieu de soin, ou autre)
                 </label>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-8">
                 <textarea class="form-control" id="covid19_radioOuiText"></textarea>
             </div>
         </div>
-    </div>
 
 
-    <div class="row">
-        <div class="col-md-12 no-margin">
-            <hr>
-            <h3>Diagnostic et manifestation</h3>
-        </div>
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Manifestations</h4>
-                </div>
-                <div class="col-md-2">
-                    <label>
-                        <input type="checkbox" id="covid19_feve r">
-                        Fièvre >= 38°C
-                    </label>
-                </div>
-                <div class="col-md-2">
-                    <label>
-                        <input type="checkbox" id="covid19_coug h">
-                        Toux
-                    </label>
-                </div>
-                <div class="col-md-2">
-                    <label>
-                        <input type="checkbox" id="covid19_breathing_disor der">
-                        Troubles respiratoires
-                    </label>
-                </div>
-                <div class="col-md-3">
-                    <label>
-                        <input type="checkbox" id="covid19_pneum onia">
-                        Pneumonie (confirmée par imagerie)
-                    </label>
-                </div>
-                <div class="col-md-3">
-                    <label>
-                        <input type="checkbox" id="covid19_ard s">
-                        ARDS (Acute Respiratory Distress Syndrome)
-                    </label>
-                </div>
-                <div class="col-md-3">
-                    <label>
-                        <input type="checkbox" id="covid19_diarrh ea">
-                        Diarrhée
-                    </label>
-                </div>
-                <div class="col-md-6">
-                    <label>
-                        <input type="checkbox" id="covid19_no_sym ptom">
-                        Aucun symptôme
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2">
-                    Autres symptômes
-                </div>
-                <div class="col-md-10">
-                    <textarea class="form-control" id="covid19_ other_"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2">
-                    Début des manifestations
-                </div>
-                <div class="col-md-2">
-                    <input type="text" class="form-control" id="covid19_events_start_date">
-                </div>
+        <div class="row">
+            <div class="col-md-12 no-margin">
+                <hr>
+                <h3>Comorbidité(s)</h3>
             </div>
         </div>
+
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-12">
-                    <h4>Maladies sous-jacentes</h4>
-                </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <label>
-                        <input type="checkbox" id="covid19_diabetes">
-                        Diabète
-                    </label>
-                </div>
-                <div class="col-md-2">
-                    <label>
-                        <input type="checkbox" id="covid19_cardiovascular disease">
-                        Maladie cardiovasculaire
-                    </label>
-                </div>
-                <div class="col-md-2">
-                    <label>
-                        <input type="checkbox" id="covid19_immunosuppression">
-                        Immunosuppression
+                        <input type="checkbox" id="covid19_age">
+                        Age > 65 ans
                     </label>
                 </div>
                 <div class="col-md-3">
                     <label>
-                        <input type="checkbox" id="covid19_hypertension">
-                        Hypertension
+                        <input type="checkbox" id="covid19_hta">
+                        HTA
                     </label>
                 </div>
                 <div class="col-md-3">
                     <label>
-                        <input type="checkbox" id="covid19_chronic_respiratory_disease">
-                        Maladie respiratoire chronique
+                        <input type="checkbox" id="covid19_diabete">
+                        Diabète traité
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_cardiovasculaire">
+                        Maladie cardio-vasculaire
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_maladiechronique">
+                        Maladie respiratoire chronique (SAOS ne comptant pas)
                     </label>
                 </div>
                 <div class="col-md-3">
@@ -306,48 +239,179 @@
                         Cancer
                     </label>
                 </div>
-                <div class="col-md-6">
-                    <label>
-                        <input type="checkbox" id="covid19_no_diseases">
-                        Aucune
-                    </label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 no-margin">
+                <hr>
+                <h3>Examens cliniques</h3>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-2">
+                        Date du début des symptômes
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 no-margin">
+                <hr>
+                <h3>Diagnostic et manifestation</h3>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Manifestations</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_feve r">
+                            Fièvre >= 38°C
+                        </label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_coug h">
+                            Toux
+                        </label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_breathing_disor der">
+                            Troubles respiratoires
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_pneum onia">
+                            Pneumonie (confirmée par imagerie)
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_ard s">
+                            ARDS (Acute Respiratory Distress Syndrome)
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_diarrh ea">
+                            Diarrhée
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label>
+                            <input type="checkbox" id="covid19_no_sym ptom">
+                            Aucun symptôme
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Autres symptômes
+                    </div>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="covid19_ other_"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Début des manifestations
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="covid19_events_start_date">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Maladies sous-jacentes</h4>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_diabetes">
+                            Diabète
+                        </label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_cardiovascular disease">
+                            Maladie cardiovasculaire
+                        </label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>
+                            <input type="checkbox" id="covid19_immunosuppression">
+                            Immunosuppression
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_hypertension">
+                            Hypertension
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_chronic_respiratory_disease">
+                            Maladie respiratoire chronique
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <input type="checkbox" id="covid19_canceer">
+                            Cancer
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label>
+                            <input type="checkbox" id="covid19_no_diseases">
+                            Aucune
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Autres
+                    </div>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="covid19_other_diseases"></textarea>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2">
-                    Autres
+                <div class="col-md-5">
                 </div>
-                <div class="col-md-10">
-                    <textarea class="form-control" id="covid19_other_diseases"></textarea>
+                <div class="col-md-4">
+                    <input type="button" class="btn-primary" value="Créer pièce jointe pour mail"
+                           onclick="downloadLab('positive_case')">
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-            </div>
-            <div class="col-md-4">
-                <input type="button" class="btn-primary" value="Créer pièce jointe pour mail"
-                       onclick="downloadLab('positive_case')">
-            </div>
-            <div class="col-md-3">
-            </div>
+                <div class="col-md-3">
+                </div>
 
-        </div>
-        <div class="row">
-            <div class="col-md-5">
             </div>
-            <div class="col-md-4">
-                Envoyer le fichier généré à <a
-                    href="mailto:covid-19@hin.infreport.ch?subject=Covid-19 report positive case">covid-19@hin.infreport.ch</a>
-                (mail securisé)
-            </div>
-            <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-4">
+                    Envoyer le fichier généré à <a
+                        href="mailto:covid-19@hin.infreport.ch?subject=Covid-19 report positive case">covid-19@hin.infreport.ch</a>
+                    (mail securisé)
+                </div>
+                <div class="col-md-3">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-</form>
+    </form>
 </div>
 </div>
 </body>
