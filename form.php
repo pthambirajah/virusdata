@@ -1,3 +1,8 @@
+<?php
+session_start();
+//Fichier de connexion
+include("connexion.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,7 +74,18 @@
                     Médecin traitant-e
                 </div>
                 <div class="col-md-4">
-                    <input type="search" class="form-control" id="covid19_searchmedecin">
+                    <select type="search" class="form-control" id="covid19_searchmedecin">
+                        <?php
+   						 	$reponse = $bdd->query('SELECT * FROM localDoctor');
+                        while ($donnees = $reponse->fetch())
+                        {
+                        $idLocalDoctor = $donnees['idLocalDoctor'];
+                        $doctorFirstName = $donnees['doctorFirstName'];
+                        $doctorLastName = $donnees['doctorLastName'];
+                        echo "<option value='$idLocalDoctor'>$doctorFirstName $doctorLastName</option>";
+                        }
+                        ?>
+                    </select>
                 </div>
             </div>
         </div>
@@ -80,7 +96,17 @@
                     Hopital (lieu du dépistage)
                 </div>
                 <div class="col-md-4">
-                    <input type="search" class="form-control" id="covid19_searchhopital">
+                    <select type="search" class="form-control" id="covid19_searchhopital">
+                        <?php
+                             $reponse = $bdd->query('SELECT hospitalName FROM hospital');
+                        while ($donnees = $reponse->fetch())
+                        {
+                        $idHospital = $donnees['idHospital'];
+                        $hospitalName = $donnees['hospitalName'];
+                        echo "<option value='$idHospital'>$hospitalName</option>";
+                        }
+                        ?>
+                    </select>
                 </div>
             </div>
         </div>
