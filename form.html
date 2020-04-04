@@ -311,6 +311,7 @@
             </div>
         </div>
 
+
         <div class="row">
             <div class="col-md-12 no-margin">
                 <hr>
@@ -318,140 +319,200 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-8">
-                <table style="width:100%">
-                    <caption>Drapeau rouge : consultation aux <b>urgences</b></caption>
-                    <tr>
-                        <td>January</td>
-                        <td>$100</td>
-                    </tr>
-                    <tr>
-                        <td>February</td>
-                        <td>$50</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+        <div class="col-md-12">
 
-        <div class="row">
-            <div class="col-md-12 no-margin">
-                <hr>
-                <h3>Attitude (cocher ce qui convient)</h3>
-            </div>
-        </div>
+            <div class="row">
+                <h4>Drapeau rouge : consultation aux <b>urgences</b></h4>
 
-
-        <div class="row">
-            <div class="col-md-10">
-                <label>
-                    <input type="checkbox" id="covid19_frottis">
-                    Frottis COVID19 effectué. Le/la patient-e et le médecin traitant-e seront avertis dès la
-                    réception du résultat.
-                    <b>En cas de résultat positif, nous prions le/la médecin traintant-e d'éffectuer la levée de
-                        l'isolement</b>
-                    selon recommandations sous <a
-                        href="https://www.hpci.ch/">www.hpci.ch/</a> et selon la date de début des symptômes
-                    inscrits au début de ce document.
-                </label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-3">
-                <label>
-                    <input type="checkbox" id="covid19_supervision">
-                    Supervision demandée
-                </label>
-            </div>
-            <div class="col-md-3">
-                <label>
-                    <input type="checkbox" id="covid19_urgence">
-                    Référé-e aux urgences
-                </label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10">
-                <label>
-                    <input type="checkbox" id="covid19_t_sympt">
-                    Traitement(s) symptomatique(s) (PAS d'AINS)
-                </label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10">
-                <label>
-                    <input type="checkbox" id="covid19_suspens">
-                    Mis en suspens du traitement habituel d'AINS y compris COX-2
-                </label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10">
-                <label>
-                    <input type="checkbox" id="covid19_consigne">
-                    Consigne au/à la patient-e de discuter avec son/sa spécialiste de la mise en suspens des
-                    immunosuppresseurs (sauf prednisone) suivant résultat du frottis.
-                </label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10">
-                <label>
-                    <input type="checkbox" id="covid19_isolement">
-                    Auto-isolement en attente des résulats : brochures
-                    <i> Isolement au domicile / contacts étroits délivrée </i>
-                </label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10">
-                <label>
-                    <input type="checkbox" id="covid19_professionels">
-                    Pour les professione-le-s de la santé : retour au travail, sauf si contact
-                    sans protection avec cas confirmé de COVID-19
-                </label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <label>
-                    <input type="checkbox" id="covid19_arret_travail">
-                    Arrêt de travail délivré. Nombre de jours :
-                </label>
-            </div>
-            <div class="col-md-1">
-                <input type="text" id="covid19_arrets_nbjours">
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-md-5">
-            </div>
-            <div class="col-md-4">
-                <input type="button" class="btn-primary" value="Créer pièce jointe pour mail"
-                       onclick="downloadLab('positive_case')">
-            </div>
-            <div class="col-md-3">
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_redflag_TA">
+                        Tension artérielle
+                        <b><90</b> ou TAd <b><60</b>
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_redflag_fr">
+                        Fréquence respiratoire <b>>30</b>
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_redflag_temp">
+                        Température <b><35</b> ou <b>>40</b>
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_redflag_spo2">
+                        SpO2 <b><90%</b>
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_redflag_fc">
+                        Fréquence cardiaque <b>>125</b>
+                    </label>
+                </div>
             </div>
 
-        </div>
-        <div class="row">
-            <div class="col-md-5">
+            <div class="row">
+                <h4>Drapeau orange : <b>supervision</b></h4>
+
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_yellowflag_pej">
+                        Péjoration état général
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_yellowflag_fr">
+                        Fréquence réspiratoire <b>>20</b>
+
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_yellowflag_temp">
+                        Fièvre persistante après 4 jours
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_orangeflag_spo2">
+                        SpO2 <b><94%</b>
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_yellowflag_fc">
+                        Douleurs rétro-sternale
+
+                    </label>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 no-margin">
+                        <hr>
+                        <h3>Attitude (cocher ce qui convient)</h3>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                Envoyer le fichier généré à <a
-                    href="mailto:covid-19@hin.infreport.ch?subject=Covid-19 report positive case">covid-19@hin.infreport.ch</a>
-                (mail securisé)
+
+
+            <div class="row">
+                <div class="col-md-10">
+                    <label>
+                        <input type="checkbox" id="covid19_frottis">
+                        Frottis COVID19 effectué. Le/la patient-e et le médecin traitant-e seront avertis dès la
+                        réception du résultat.
+                        <b>En cas de résultat positif, nous prions le/la médecin traintant-e d'éffectuer la levée de
+                            l'isolement</b>
+                        selon recommandations sous <a
+                            href="https://www.hpci.ch/">www.hpci.ch/</a> et selon la date de début des symptômes
+                        inscrits au début de ce document.
+                    </label>
+                </div>
             </div>
-            <div class="col-md-3">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_supervision">
+                        Supervision demandée
+                    </label>
+                </div>
+                <div class="col-md-3">
+                    <label>
+                        <input type="checkbox" id="covid19_urgence">
+                        Référé-e aux urgences
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10">
+                    <label>
+                        <input type="checkbox" id="covid19_t_sympt">
+                        Traitement(s) symptomatique(s) (PAS d'AINS)
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10">
+                    <label>
+                        <input type="checkbox" id="covid19_suspens">
+                        Mis en suspens du traitement habituel d'AINS y compris COX-2
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10">
+                    <label>
+                        <input type="checkbox" id="covid19_consigne">
+                        Consigne au/à la patient-e de discuter avec son/sa spécialiste de la mise en suspens des
+                        immunosuppresseurs (sauf prednisone) suivant résultat du frottis.
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10">
+                    <label>
+                        <input type="checkbox" id="covid19_isolement">
+                        Auto-isolement en attente des résulats : brochures
+                        <i> Isolement au domicile / contacts étroits délivrée </i>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <label>
+                        <input type="checkbox" id="covid19_professionels">
+                        Pour les professione-le-s de la santé : retour au travail, sauf si contact
+                        sans protection avec cas confirmé de COVID-19
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label>
+                        <input type="checkbox" id="covid19_arret_travail">
+                        Arrêt de travail délivré. Nombre de jours :
+                    </label>
+                </div>
+                <div class="col-md-1">
+                    <input type="text" id="covid19_arrets_nbjours">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-4">
+                    <input type="button" class="btn-primary" value="Créer pièce jointe pour mail"
+                           onclick="downloadLab('positive_case')">
+                </div>
+                <div class="col-md-3">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-4">
+                    Envoyer le fichier généré à <a
+                        href="mailto:covid-19@hin.infreport.ch?subject=Covid-19 report positive case">covid-19@hin.infreport.ch</a>
+                    (mail securisé)
+                </div>
+                <div class="col-md-3">
+                </div>
             </div>
         </div>
     </div>
