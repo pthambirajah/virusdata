@@ -9,6 +9,21 @@
     <script src="js/jquery-ui.min.js"></script>
     <script type="application/javascript" src="js/script-common.js"></script>
     <link rel="stylesheet" type="text/css" href="css/overrides.css">
+    <style>
+        .red {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+            opacity: 0.7;
+        }
+        .orange {
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            opacity: 0.7;
+
+        }
+    </style>
 </head>
 <body class="mod mod-layout">
 <div class="mod mod-nsbnewsdetails">
@@ -255,9 +270,7 @@
                         Tension artérielle
                     </div>
                     <div class="col-md-1">
-                        <input type="text" id="covid19_birth_ta1">
-                        /
-                        <input type="text" id="covid19_birth_ta2">
+                        <input type="text" id="covid19_birth_ta1">/<input type="text" id="covid19_birth_ta2">
                     </div>
                 </div>
                 <div class="row">
@@ -322,7 +335,7 @@
         <div class="col-md-12">
 
             <div class="row">
-                <h4>Drapeau rouge : consultation aux <b>urgences</b></h4>
+                <h4 class="red">Drapeau rouge : consultation aux <b>urgences</b></h4>
 
                 <div class="col-md-3">
                     <label>
@@ -358,7 +371,7 @@
             </div>
 
             <div class="row">
-                <h4>Drapeau orange : <b>supervision</b></h4>
+                <h4 class="orange">Drapeau orange : <b>supervision</b></h4>
 
                 <div class="col-md-3">
                     <label>
